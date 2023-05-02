@@ -1,0 +1,18 @@
+#include<stdio.h>
+void exchage_by_reference(int *,int *);
+int main()
+{
+int a,b;
+scanf("%d",&a);
+scanf("%d",&b);
+exchange_by_reference(&a,&b);
+printf("A's value is %d\n",a);
+printf("B's value is %d\n",b);
+}
+void exchange_by_reference(int *x,int *y)
+{
+int dummy;
+dummy=*x;
+*x=*y;
+*y=dummy;
+}
