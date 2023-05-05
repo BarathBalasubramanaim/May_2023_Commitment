@@ -1,0 +1,18 @@
+#include<stdio.h>
+void jsmn_init(struct z1*parser);
+struct jsmn_parser{
+unsigned int pos;
+unsigned int toknext;
+int toksuper;
+};struct jsmn_parser z1;
+int main()
+{
+jsmn_init(&z1);
+return 0;
+}
+void jsmn_init(struct z1*parser)
+{
+parser->pos=0;
+parser->toknext=0;
+parser->toksuper=-1;
+}
