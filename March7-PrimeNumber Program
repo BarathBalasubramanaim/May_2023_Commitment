@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int diviser,iteration1,givennumber;
+	printf("Give me any number: ");
+	scanf("%d",&givennumber);
+	diviser=2;                  /* I am Initializing Diviser as 2 Because, If Divide (MODULUS) 0 and 1 with any number It usually zero */
+	line10:iteration1=givennumber%diviser;     
+	if(iteration1==0){
+		if(diviser!=givennumber)    /* If Diviser Number not equal to givennumber it is not prime All Even Number will Fail Here*/
+	{
+		printf("The GIVEN NUMBER IS NOT PRIME");
+        goto line20;
+	}
+	goto line30;
+	}
+	else{
+	line30:if(diviser==givennumber)  /* In this Program the Number only can Divide by the same Number with Remainder zero so It is eligible for prime Number*/
+		{
+			printf("The number is prime");
+			goto line20;
+		}
+		if(diviser<givennumber) /*Diviser starts with 2 we need to check with other numbers as well.So,It will increase the Diviser until diviser becomes greater than givennumber*/
+		{
+			diviser=diviser+1;
+			goto line10;
+		}
+	}
+	line20:printf("\nTHE END");
+}
