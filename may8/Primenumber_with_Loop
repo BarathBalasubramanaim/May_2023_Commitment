@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+int givennumber,diviser,prime=1;
+printf("Give me a number: ");
+scanf("%d",&givennumber);
+if(givennumber==2)
+{
+    printf("The Number is Prime");
+}
+for(diviser=2;diviser<givennumber;diviser++)
+{
+if((givennumber%diviser)==0)
+{
+prime=0;
+printf("The Number id not prime");
+break;
+}
+}
+if(prime==1)
+{
+printf("The Number is Prime");
+}
+return 0;
+}
