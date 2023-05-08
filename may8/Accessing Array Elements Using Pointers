@@ -12,3 +12,14 @@ int main()
 	}
 	return 0;
 }
+
+/*OUTPUT
+
+Address of a pointer:1303815744 Value of a pointer:24
+Address of a pointer:1303815748 Value of a pointer:34
+Address of a pointer:1303815752 Value of a pointer:44
+Address of a pointer:1303815756 Value of a pointer:54
+Address of a pointer:1303815760 Value of a pointer:64
+Address of a pointer:1303815764 Value of a pointer:74
+
+*/
