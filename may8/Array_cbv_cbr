@@ -1,0 +1,53 @@
+#include<stdio.h>
+void call_by_value(int);
+void call_by_reference(int*);
+int main()
+{
+	int i;
+	int array[]={1,2,3,4,5};
+	for(i=0;i<=4;i++)
+	{
+		call_by_value(array[i]);
+	}
+	for(i=0;i<=4;i++)
+	{
+		call_by_reference(&array[i]);
+	}
+}
+void call_by_value(int value)
+{
+	printf("%d\n",value);
+}
+void call_by_reference(int*reference)
+{
+	printf("%d\n",*reference); /*If Not-Added Derefernce operatior Output1 (It shows the Address of the Pointer)
+}                           /*If Added Derefernce Operator Output2 (It shows the value of the pointee).
+
+/* OUTPUT
+
+OUTPUT 1
+
+1
+2
+3
+4
+5
+400989088
+400989092
+400989096
+400989100
+400989104
+
+OUTPUT 2
+
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+*/
