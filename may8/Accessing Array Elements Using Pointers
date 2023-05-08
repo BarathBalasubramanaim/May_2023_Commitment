@@ -1,0 +1,14 @@
+/* Accessing Array Elements Using Pointers */
+#include<stdio.h>
+int main()
+{
+	int number[]={24,34,44,54,64,74};
+	int i,*ptr;
+	ptr=&number[0];
+	for(i=0;i<=5;i++)
+	{
+		printf("Address of a pointer:%u Value of a pointer:%d\n",ptr,*ptr);
+		ptr++;
+	}
+	return 0;
+}
