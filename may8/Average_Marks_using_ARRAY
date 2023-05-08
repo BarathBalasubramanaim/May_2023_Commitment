@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	int marks[5],i,average;
+	int sum=0;
+	int numberofstudents=0;
+	for(i=0;i<4;i++)
+	{
+		printf("Give the mark of the student: ");
+		scanf("%d",&marks[i]);
+		numberofstudents++;
+	}
+	for(i=0;i<4;i++)
+	{
+		sum=sum+marks[i];
+	}
+	average=sum/numberofstudents;
+	printf("The average mark is:%d\n",average);
+}
+
+
+/*Output
+Give the mark of the student: 100
+Give the mark of the student: 100
+Give the mark of the student: 100
+Give the mark of the student: 100
+The average mark is:100*/
