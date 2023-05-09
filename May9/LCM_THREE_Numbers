@@ -1,5 +1,5 @@
 #include<stdio.h>
-int greaternumber(Digit1,Digit2,Digit3);
+int greater_number(int Digit1,int Digit2,int Digit3);
 int main()
 {
     int Digit1,Digit2,Digit3,lcm;
@@ -9,7 +9,7 @@ int main()
     scanf("%d",&Digit2);
     printf("Number3: ");
     scanf("%d",&Digit3);
-    lcm=greaternumber(Digit1,Digit2,Digit3);
+    lcm=greater_number(Digit1,Digit2,Digit3);
     
    while(1)
     {
@@ -22,7 +22,7 @@ int main()
     
         printf("The LCM is:%d\n",lcm);
 }
-int greaternumbernumber(int number1,int number2,int number3)
+int greater_number(int number1,int number2,int number3)
 {
     int lcm;
      if(number1>number2)
