@@ -1,0 +1,45 @@
+#include<stdio.h>
+int greaternumber(Digit1,Digit2,Digit3);
+int main()
+{
+    int Digit1,Digit2,Digit3,lcm;
+    printf("Number1: ");
+    scanf("%d",&Digit1);
+    printf("Number2: ");
+    scanf("%d",&Digit2);
+    printf("Number3: ");
+    scanf("%d",&Digit3);
+    lcm=greaternumber(Digit1,Digit2,Digit3);
+    
+   while(1)
+    {
+        if((lcm%Digit1)==0)
+           if((lcm%Digit2)==0)
+             if((lcm%Digit3)==0)
+             break;
+             lcm++;
+    }
+    
+        printf("The LCM is:%d\n",lcm);
+}
+int greaternumbernumber(int number1,int number2,int number3)
+{
+    int lcm;
+     if(number1>number2)
+    {
+        lcm=number1;
+    }
+    else
+    {
+        lcm=number2;
+    }
+    if(lcm>number3)
+    {
+        lcm=lcm;
+    }
+    else
+    {
+        lcm=number3;
+    }
+    return lcm;
+}
