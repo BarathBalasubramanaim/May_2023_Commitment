@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int i,number;
+	char number_string[50];
+	i=0;number=0;
+	printf("Give me a number: ");
+	scanf("%s",number_string);
+	while(number_string[i]!=0)
+	{
+	    printf("The ASCII Value of the given_number:%d\n",number_string[i]);
+		number=(number*10)+(number_string[i]-48);
+		i++;
+	}
+	printf("Entered number=%d",number);
+}
+
+/*OUTPUT*/
+Give me a number: 1234567890
+The ASCII Value of the given_number:49
+The ASCII Value of the given_number:50
+The ASCII Value of the given_number:51
+The ASCII Value of the given_number:52
+The ASCII Value of the given_number:53
+The ASCII Value of the given_number:54
+The ASCII Value of the given_number:55
+The ASCII Value of the given_number:56
+The ASCII Value of the given_number:57
+The ASCII Value of the given_number:48
+Entered number=1234567890
