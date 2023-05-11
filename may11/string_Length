@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	char string[50];
+	int i, number_without_zero;
+	i=0;
+	number_without_zero=0;
+	while(string[i]!=0)
+	{
+		if(string[i]==48)
+		{
+		  i++
+		}
+        else
+		{
+         number_without_zero=(number_without_zero*10)+(strong[i]-48);
+		 i++;
+		}
+	}
+	printf("%d\n",number_without_zero);
+}
