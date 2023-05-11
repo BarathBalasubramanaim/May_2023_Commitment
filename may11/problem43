@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	
+	char string[50];
+	printf("Give me a number: ");
+	scanf("%s",string);
+	int i=0;
+	while(string[i]!=0)
+	{
+		while(string[i]<48 || string[i]>57)
+		{
+			printf("NOT A VALID NUMBER");
+			return 0;
+		}
+		i++;
+	}
+	printf("THE NUMBER IS VALID NUMBER");
+}
+
+/*output*/
+Give me a number: 123456qwert
+NOT A VALID NUMBER
+
+Give me a number: 1234567890
+THE NUMBER IS VALID NUMBER
+/*
