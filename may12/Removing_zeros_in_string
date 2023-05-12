@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	char string[50];
+	int i;
+	i=0;
+	int initialization=0;
+	int*number_without_zero;
+	number_without_zero=&initialization;
+	scanf("%s",string);
+	while(string[i]!=0)
+	{
+		if(string[i]==48)
+		{
+		  i++;
+		}
+        else
+		{
+         *number_without_zero=(*number_without_zero*10)+(string[i]-48);
+		 i++;
+		}
+	}
+	printf("%d\n",*number_without_zero);
+}
+
+/*OUTPUT
+1234560099
+12345699
+*/
