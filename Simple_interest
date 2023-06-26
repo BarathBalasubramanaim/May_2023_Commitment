@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int p,n;
+    float roi,simple_interest;
+    printf("Give me the values: ");
+    scanf("%d   %d  %f",&p,&n,&roi);
+    simple_interest=p*n*roi/100;
+    printf("The simple interest is:%f",simple_interest);
+    return 0;
+}
