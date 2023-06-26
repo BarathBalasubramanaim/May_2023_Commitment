@@ -8,4 +8,5 @@ int main()
     simple_interest=p*n*roi/100;
     printf("The simple interest is:%f",simple_interest);
     return 0;
+
 }
