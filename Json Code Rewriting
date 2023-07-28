@@ -1,0 +1,52 @@
+#include<stdio.h>
+struct jsmn_parser
+{
+unsigned int pos;
+unsigned int toknext;
+int toksuper;
+};
+struct jsmn_parser variable1={12,13,14};
+struct jsmn_parser variable2={0};
+int main()
+{
+printf("%d %d %d\n",variable1.pos,variable1.toknext,variable1.toksuper);
+}
+
+#include<stdio.h>
+
+typedef struct jsmn_parser
+{
+unsigned int pos;
+unsigned int toknext;
+int toksuper;
+}jsmn_parser;
+jsmn_parser variable1,variable2;
+jsmn_parser variable1={12,13,14};
+jsmn_parser variable2={0};
+int main()
+{
+printf("%d %d %d\n",variable1.pos,variable1.toknext,variable1.toksuper);
+}
+
+
+#include<stdio.h>
+
+void jsmn_init(jsmn_parser*parser);
+typedef struct jsmn_parser
+{
+unsigned int pos;
+unsigned int toknext;
+int toksuper;
+}jsmn_parser;
+
+int main()
+{
+jsmn_init(jsmn_parser*parser);
+}
+
+void jsmn_init(jsmn_parser*parser)
+{
+parser->pos=0;
+parser->toknext=0;
+parser->toksuper=-1;
+}
